@@ -12,10 +12,9 @@ import random
 def lowest_number_calculator(array=[]):
     lowest_number = array[0]
     counter1 = 0
-    while counter1 < len(array):
-        if array[counter1] < lowest_number:
-            lowest_number = array[counter1]
-        counter1 += 1
+    for number in array:
+        if number < lowest_number:
+            lowest_number = number
     return lowest_number
 
 
